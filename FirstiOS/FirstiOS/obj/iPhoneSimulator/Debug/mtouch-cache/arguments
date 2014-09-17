@@ -1,14 +1,14 @@
 # Version: 7.2.6.28 (606f31a)
-# [first argument, ignore] # /Users/jhansipailla/Projects/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/mtouch.exe
+# [first argument, ignore] # /Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/mtouch.exe
 /Developer/MonoTouch/usr/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
-	/Users/jhansipailla/Projects/FirstiOS/FirstiOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstiOS/FirstiOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--nomanifest \
 	--nosign \
 	-sim \
-	/Users/jhansipailla/Projects/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/FirstiOS.app \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/FirstiOS.app \
 	-r \
 	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
 	-r \
@@ -24,4 +24,4 @@
 	-targetver \
 	7.1 \
 	--abi=i386 \
-	/Users/jhansipailla/Projects/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/FirstiOS.exe \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstiOS/FirstiOS/bin/iPhoneSimulator/Debug/FirstiOS.exe \

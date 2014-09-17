@@ -1,0 +1,28 @@
+# Version: 7.2.6.28 (606f31a)
+# [first argument, ignore] # /Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstTabbedApplication/FirstTabbedApplication/bin/iPhoneSimulator/Release/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstTabbedApplication/FirstTabbedApplication/obj/iPhoneSimulator/Release/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstTabbedApplication/FirstTabbedApplication/bin/iPhoneSimulator/Release/FirstTabbedApplication.app \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/MonoTouch.Dialog-1.dll \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstTabbedApplication/FirstTabbedApplication/bin/iPhoneSimulator/Release/FirstTabbedApplication.exe \

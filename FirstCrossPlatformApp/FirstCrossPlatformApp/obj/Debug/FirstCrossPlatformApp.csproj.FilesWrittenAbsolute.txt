@@ -1,0 +1,1 @@
+/Users/jhansipailla/Documents/GithubRepos/XamarinRepo.git/FirstCrossPlatformApp/FirstCrossPlatformApp/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs

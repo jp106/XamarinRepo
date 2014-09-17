@@ -38,7 +38,7 @@ namespace FirstiOS
 		UIPickerView pickeritems;
 		float h = 50.0f;
 		float w = 50.0f;
-		float padding = 10.0f;
+		float padding = 5.0f;
 		int n = 4;
 		public override void ViewDidLoad ()
 		{
@@ -52,17 +52,24 @@ namespace FirstiOS
 				Frame = new RectangleF (0, 100, View.Frame.Width,
 					h + 2 * padding),
 				ContentSize = new SizeF ((w + padding) * n, h),
-				BackgroundColor = UIColor.Purple,
+				BackgroundColor = UIColor.Orange,
 				AutoresizingMask = UIViewAutoresizing.FlexibleWidth
 			};
 			_scrollViewYear = new UIScrollView {
 				Frame = new RectangleF (0, 20, View.Frame.Width,
 					h + 2 * padding),
 				ContentSize = new SizeF ((w + padding) * n, h),
-				BackgroundColor = UIColor.Purple,
+				BackgroundColor = UIColor.Orange,
 				AutoresizingMask = UIViewAutoresizing.FlexibleWidth
 			};
 
+			PreapareScrollers ();
+			//View.AddSubviews (pickeritems);
+			// Perform any additional setup after loading the view, typically from a nib.
+		}
+
+		private void PreapareScrollers()
+		{
 			Tukda.AddAllButtons ();
 			for (int i=1; i<4; i++) {
 
@@ -80,12 +87,9 @@ namespace FirstiOS
 					}else	if (button.TitleLabel.Text =="3 Year") {
 						c = Tukda.thirdlist.Capacity;
 					}
-					foreach (var view in _scrollViewSyllabus.Subviews) {
-					
-							view.RemoveFromSuperview();
 
-						
-					}
+					PurgeViews();
+
 					for (int l=0; l<c; l++) {
 						var btn = new ButtonItem("","");
 
@@ -97,7 +101,7 @@ namespace FirstiOS
 							btn = Tukda.GetThirdYearSyllabus(l);
 						}
 
-						btn.Frame = new RectangleF (padding * (l + 1) + (l * w),
+						btn.Frame = new RectangleF (padding * (l + 1) + (l * 80.0f),
 							padding, w, h);
 
 						btn.TouchUpInside += (obj, EventArgs) => {
@@ -111,20 +115,7 @@ namespace FirstiOS
 
 				_buttons.Add (button);
 			}
-			/* for (int l=0; l<n; l++) {
-				var btn = Tukda.GetFirstYearSyllabus(l);
 
-				//var button = UIButton.FromType (UIButtonType.RoundedRect);
-
-				btn.Frame = new RectangleF (padding * (l + 1) + (l * w),
-					padding, w, h);
-
-				btn.TouchUpInside += (s, e) => {
-					labelListitems.Text = btn.Bol;
-				};
-				_scrollViewSyllabus.AddSubview (btn);
-				_buttons.Add (btn);
-			}*/
 			pickeritems = new UIPickerView {Frame = new RectangleF (50, 50, View.Frame.Width,
 				h + 2 * padding)};
 
@@ -137,8 +128,17 @@ namespace FirstiOS
 			};
 			View.AddSubview (_scrollViewSyllabus);
 			View.AddSubview (_scrollViewYear);
-			//View.AddSubviews (pickeritems);
-			// Perform any additional setup after loading the view, typically from a nib.
+
+		}
+
+		private void PurgeViews()
+		{
+			foreach (var view in _scrollViewSyllabus.Subviews) {
+
+				view.RemoveFromSuperview();
+
+
+			}
 		}
 
 		public override void ViewWillAppear (bool animated)
