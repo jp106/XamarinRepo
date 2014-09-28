@@ -179,7 +179,7 @@ namespace FirstiOS
 	{
 		public ButtonItem(string b,string t)
 		{
-
+			var i = 1;
 			Bol = b;
 			SetTitle(t,UIControlState.Normal);
 

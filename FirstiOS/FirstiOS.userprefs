@@ -1,9 +1,17 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Downloads/code/InitialScreenDemo/InitialScreenDemo/AppDelegate.cs">
     <Files>
       <File FileName="../../../../Downloads/code/InitialScreenDemo/InitialScreenDemo/ViewController1.cs" Line="38" Column="38" />
       <File FileName="../../../../Downloads/code/InitialScreenDemo/InitialScreenDemo/AppDelegate.cs" Line="18" Column="18" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstiOS/FirstiOSViewController.cs">
+    <Files>
+      <File FileName="FirstiOS/FirstiOSViewController.cs" Line="26" Column="26" />
+      <File FileName="FirstiOS/KathakBol/EmptyEnumeration.cs" Line="4" Column="4" />
+>>>>>>> ef2c05ad095a915a3114afe09ac0c7fe955d6da7
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
